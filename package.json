@@ -1,0 +1,24 @@
+{
+  "name": "matcha",
+  "version": "1.0.0",
+  "description": "tu as 30 seconde as t'accorder ?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hauretax/matcha.git"
+  },
+  "author": "huggo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hauretax/matcha/issues"
+  },
+  "homepage": "https://github.com/hauretax/matcha#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0"
+  }
+}
