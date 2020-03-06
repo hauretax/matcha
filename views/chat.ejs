@@ -1,3 +1,17 @@
 <html>
     <h1>tu est le visiteur n°<%= vis %></h1>
-</html>
+    <p><input type="button" value="send message" id ="poke"/></p>
+    
+    <script src="../socket.io/socket.io.js"></script>
+    <script>
+        socket.on('message', function(message){
+            let newele = document.createElement('div');
+            newele.textContent = message;
+            document.body.append(newele);
+        })
+        document.getElementById("poke").onclick = function () {
+            console.log("tu as poke le serveur");
+            socket.emit('message',"POKERRRRR");
+        }
+    </script>
+</html> 
